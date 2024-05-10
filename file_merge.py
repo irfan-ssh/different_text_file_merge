@@ -9,7 +9,7 @@ def merge_files_in_directory(input_directory, output_directory):
                 with open(file_path, 'r') as input_file:
                     links = input_file.readlines()
                     for link in links:  
-                        output_file.write(link.strip() + "\n")  # Space of between every line
+                        output_file.write(link.strip())  # Space of between every line
                         output_file.write("\n")
     print("Files merged successfully!")
 
